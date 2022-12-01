@@ -1,0 +1,173 @@
+@font-face {
+  font-family: menuFont;
+  src: url(fonts/CaveatBrush-Regular.ttf);
+}
+
+@font-face {
+  font-family: TitleFont;
+  src: url(fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: HorarioFont;
+  src: url(fonts/Kalam-Bold.ttf);
+}
+
+header {
+  background-color: black;
+}
+
+body {
+  background-image: url("img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  background-image: url("img/FondoMadera.jpg");
+  font-family: TitleFont;
+  font-size: 40px;
+  position: relative;
+  color: white;
+}
+
+article {
+  background-color: rgba(51, 24, 24, 0.815);
+  color: white;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 2%;
+}
+
+li{
+  font-family: menuFont;
+  font-size: 20px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+}
+
+.informacion {
+  align-self: center;
+  padding: 10%;
+}
+
+main {
+  padding: 100px;
+}
+
+/* CSS Carta*/
+
+dt {
+  padding-top: 5%;
+  font-size: larger;
+}
+
+
+dl>div>div {
+  border-bottom: 1px solid;
+}
+
+.imgCarta{
+  width: 200px;
+  margin: 10px;
+}
+
+.precio{
+  font-size: large;
+  font-weight: bold;
+}
+
+.alergenos{
+  color:rgb(255, 0, 0);
+}
+
+/*CSS Horario y Mapa*/
+
+#Horario {
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("/src/img/Horario.jpg");
+  font-family: HorarioFont;
+}
+
+#Mapa {
+  min-height: 400px;
+  max-width: 500px;
+  padding: 5%;
+}
+
+
+/* CSS contacto*/
+
+.fechahora {
+  width: min-content;
+}
+
+#Contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin: 20px 0 2px;
+}
+
+input, select, textarea {
+  min-width: 280px;
+  max-width: 30%;
+}
+
+#terminos > label{
+  font-size: 13px;
+  
+}
+
+#terminos {
+  margin: 20px 0;
+}
+
+#terminos input {
+  max-width: none;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.boton {
+  width: fit-content;
+  max-width: none;
+  min-width: 0;
+  padding: 5px;
+  margin: 20px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: gray;
+  color: white;
+}
+
+form > div {
+  margin-top: 2%;
+  
+}
+
+/* Footer css*/
+footer {
+  background-color: white;
+  padding: 2%;
+}
+
+footer>a {
+  margin: 1%;
+}
+
+.fa:hover {
+  opacity: 0.5;
+}
