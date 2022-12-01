@@ -1,39 +1,35 @@
 @font-face {
-  font-family: menuFont;
-  src: url(fonts/CaveatBrush-Regular.ttf);
+  font-family: intelliJFont;
+  src: url(fonts/JetBrainsMono[wght].ttf);
+}
+@font-face {
+  font-family: intelliJFontItalic;
+  src: url(fonts/JetBrainsMono-Italic[wght].ttf);
 }
 
-@font-face {
-  font-family: TitleFont;
-  src: url(fonts/Oswald-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: HorarioFont;
-  src: url(fonts/Kalam-Bold.ttf);
+*{
+  font-family:intelliJFontItalic;
 }
 
 header {
   background-color: black;
 }
 
-body {
-  background-image: url("img/fondo.jpg");
+ body {
+  background-image: url("img/BackgroundEscenario.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+  } 
 
 h1 {
-  background-image: url("img/FondoMadera.jpg");
-  font-family: TitleFont;
   font-size: 40px;
   position: relative;
   color: white;
 }
 
 article {
-  background-color: rgba(51, 24, 24, 0.815);
+  background-color: rgba(0, 0, 0, 0.850);
   color: white;
   margin-right: 5%;
   margin-left: 5%;
@@ -41,7 +37,6 @@ article {
 }
 
 li{
-  font-family: menuFont;
   font-size: 20px;
 }
 
@@ -91,8 +86,6 @@ dl>div>div {
   align-self: center;
   justify-content: center;
   text-align: center;
-  background-image: url("/src/img/Horario.jpg");
-  font-family: HorarioFont;
 }
 
 #Mapa {
@@ -162,6 +155,8 @@ form > div {
 footer {
   background-color: white;
   padding: 2%;
+  position: fixed;
+  bottom: 0;
 }
 
 footer>a {

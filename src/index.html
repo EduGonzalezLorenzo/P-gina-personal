@@ -3,772 +3,90 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Vulcano Aragón</title>
-  <link rel="shortcut icon" href="img/Logo.jpg">
+  <title>Personal web</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="apple-touch-icon" sizes="57x57" href="/src/img/favIcon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/src/img/favIcon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/src/img/favIcon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/src/img/favIcon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/src/img/favIcon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/src/img/favIcon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/src/img/favIcon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/src/img/favIcon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/src/img/favIcon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/src/img/favIcon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favIcon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/src/img/favIcon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favIcon/favicon-16x16.png">
-  <link rel="manifest" href="/src/img/favIcon/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favIcon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favIcon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favIcon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favIcon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favIcon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favIcon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favIcon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favIcon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favIcon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/favIcon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favIcon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/favIcon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favIcon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favIcon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/src/img/favIcon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="./img/favIcon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body data-bs-target=".navbar" data-bs-offset="50">
-
-  <header class="fixed-top">
-    <ul class="nav nav-tabs justify-content-around row" role="tablist">
-      <li class="nav-item col-3">
-        <a class="nav-link text-center active" data-bs-toggle="tab" href="#Inicio">Inicio</a>
+  <header class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+    <!-- Titulo del menu -->
+    <!-- <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-4">Sidebar</span>
+    </a> -->
+    <ul class="nav nav-tabs flex-column mb-auto" role="tablist">
+      <li class="nav-item">
+        <a href="#InfoPers" class="nav-link active" data-bs-toggle="tab" aria-current="page">
+          <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> -->
+          Información personal
+        </a>
       </li>
-      <li class="nav-item col-3">
-        <a class="nav-link text-center" data-bs-toggle="tab" href="#Carta">Carta</a>
+      <li class="nav-item">
+        <a href="#EstudiosCV" class="nav-link" data-bs-toggle="tab" aria-current="page"> Estudios</a>
       </li>
-      <li class="nav-item col-3">
-        <a class="nav-link text-center" data-bs-toggle="tab" href="#Ubicacion">Ubicación</a>
+      <li class="nav-item">
+        <a href="#LaboralCV" class="nav-link" data-bs-toggle="tab" aria-current="page">Experiencia laboral</a>
       </li>
-      <li class="nav-item col-3">
-        <a class="nav-link text-center" data-bs-toggle="tab" href="#Contacto">Contacto</a>
+      <li class="nav-item">
+        <a href="#Contacto" class="nav-link" data-bs-toggle="tab" aria-current="page">Contacto</a>
       </li>
     </ul>
   </header>
 
   <main class="container tab-content">
-
-    <article id="Inicio" class="tab-pane fade show active">
-      <h1 class="text-center">Inicio</h1>
+    <article id="InfoPers" class="tab-pane fade show active">
+      <h1 class="text-center">¿Quien soy?</h1>
       <section class="row text-center ">
-        <div class="col-12 col-md-6 informacion">
-          <h2>Una braseria con encanto mallorquín</h2>
-          <p> A escasos metros del centro de Palma se encuentra esta brasería familiar en la que la gastronomía
-            mallorquina,
-            gallega y castellana conviven en armonía. Desde sopas mallorquinas hasta pulpo a la gallega, pasando por
-            carnes
-            de excelente calidad. ¡Ven a visitarnos y compruébalo por ti mismo!</p>
-        </div>
-        <div class="col-12 col-md-6">
-          <img src="/src/img/Vulcano.jpg" class="img-thumbnail" alt="">
-        </div>
-      </section>
-      <section class="row text-center">
-        <div class="col-12 col-md-6 order-first">
-          <img src="/src/img/Taller.jpg" class="img-thumbnail float-center"
-            alt="El restaurante cuando era un taller de coches">
-        </div>
-        <div class="col-12 col-md-6 informacion">
-          <h2>De taller a restaurante</h2>
-          <p> Inaugurado originalmente como taller de coches especializado en neumáticos en el año 1938, en el año 2018
-            Claudio y Elena,
-            los actuales dueños, decidieron darle un giro de 360 grados y convertirlo en una brasería. A pesar de la
-            reforma, el local todavía
-            cuenta con algunos homenajes a sus orígenes ¡A ver cuantos puedes encontrar!</p>
-        </div>
-        </div>
+
       </section>
     </article>
 
-    <article id="Carta" class="tab-pane fade">
-      <h1 class="text-center">Carta</h1>
+    <article id="EstudiosCV" class="tab-pane fade">
+      <h1 class="text-center">¿Que he estudiado?</h1>
+      <section class="row text-center ">
 
-      <section class="accordion accordion-item">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#EntrantesCollapse"
-          aria-expanded="false" aria-controls="EntrantesCollapse">
-          <h2 class="accordion-header text-center" id="Entrantes">Para picar</h2>
-        </button>
-        <div id="EntrantesCollapse" class="accordion-collapse collapse show" aria-labelledby="Entrantes">
-          <div class="accordion-body">
-            <dl>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Patatas bravas Vulcano</dt>
-                  <dd class="descripcion">Patatas fritas con salsa brava con un toque picante.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/PatatasBravas.jpeg" alt="No hay imagen">
-                  <dd class="precio">Precio: 4,50€</dd>
-                  <dd class="alergenos">Alergenos: Lacteos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Nachos Vulcano</dt>
-                  <dd class="descripcion">Nachos con salsa boloñesa y queso fundido.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Nachos.jpg" alt="">
-                  <dd class="precio">Precio: 6,50€</dd>
-                  <dd class="alergenos">Alergenos: Lacteos, Gluten.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Queso camembert rebozado</dt>
-                  <dd class="descripcion">Triangulos de queso camembert rebozados acompañados de salsa sweet chili.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/QuesoRebozado.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 9,00€</dd>
-                  <dd class="alergenos">Alergenos: Lacteos, Gluten.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Croquetas (12 unidades)</dt>
-                  <dd class="descripcion">Variado de croquetas de jamón, cocido y bacalao.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Croquetas.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 10,00€</dd>
-                  <dd class="alergenos">Alergenos: Lacteos, Gluten, Huevo.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Alitas de pollo</dt>
-                  <dd class="descripcion">Alitas de pollo fitas acompañadas de salsa barbacoa.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/AlitasPollo.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 8,50€</dd>
-                  <dd class="alergenos">Alergenos: Lacteos, Gluten.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Pollo crujiente</dt>
-                  <dd class="descripcion">Pollo frito con rebozado de nachos acompañado de salsa barbacoa.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/PolloCrujiente.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 7,50€</dd>
-                  <dd class="alergenos">Alergenos: Gluten.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Calamar crujiente</dt>
-                  <dd class="descripcion">Aros de calamar enharinados y fritos.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/CalamarCrujiente.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 10,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Huevo, Moluscos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Gambas al ajillo</dt>
-                  <dd class="descripcion">Cacerola de gambas fritas con ajo laminado y guindilla.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/GambasAjillo.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 12,00€</dd>
-                  <dd class="alergenos">Alergenos: Crustaceos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Chipirones crijientes</dt>
-                  <dd class="descripcion">Chipirones enharinados y fritos.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Chipirones.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 12,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Huevo, Moluscos.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-evenly">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Revuelto de setas con gambas o jamón ibérico</dt>
-                  <dd class="descripcion">Huevos revueltos con setas acompañadas de gambas o jamón.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/RevueltoSetas.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 10,00€</dd>
-                  <dd class="alergenos">Alergenos: Huevo, Moluscos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Mejillones tigre</dt>
-                  <dd class="descripcion">Ración de mejillones rellenos, rebozados y fritos.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/MejillonesTigre.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 10,00€</dd>
-                  <dd class="alergenos">Alergenos: Moluscos, Harina, Lacteos.</dd>
-                </div>
-              </div>
-            </dl>
-          </div>
-        </div>
       </section>
-
-      <section class="accordion accordion-item">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#TablasCollapse"
-          aria-expanded="false" aria-controls="TablasCollapse">
-          <h2 class="accordion-header" id="Tablas">Tablas Artesanas</h2>
-        </button>
-        <div id="TablasCollapse" class="accordion-collapse collapse" aria-labelledby="Tablas">
-          <div class="accordion-body">
-            <dl>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Tabla de Jamón Serrano solo o con queso</dt>
-                  <dd class="descripcion">Con jamón serrano cortado a mano. Solo o mixto.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/TablaSerrano.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 9,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Huevo, Moluscos.</dd>
-                  </dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Tabla de Jamón Ibérico de cebo solo o con queso</dt>
-                  <dd class="descripcion">Con jamón ibérico de cebo cortado a mano. Solo o mixto.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/TablaIberico.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 12,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Lacteos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Tabla Vulcano</dt>
-                  <dd class="descripcion">Con jamón serrano, queso, lomo y embutido.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 15,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Lacteos.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Tabla Ibérica</dt>
-                  <dd class="descripcion">Con jamón ibérico, queso, lomo y embutido</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 18,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Lacteos.</dd>
-                </div>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="accordion accordion-item">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CarnesCollapse"
-          aria-expanded="false" aria-controls="CarnesCollapse">
-          <h2 class="accordion-header" id="Carnes">Carnes clásicas</h2>
-        </button>
-        <div id="CarnesCollapse" class="accordion-collapse collapse" aria-labelledby="Carnes">
-          <div class="accordion-body">
-            <dl>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Entrecot (mínimo 300gr)</dt>
-                  <dd class="descripcion">El corte clásico de ternera que no defrauda.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Entrecot.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 5,50€ cada 100 gramos</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                  </dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Entrecot madurado (mínimo 300gr)</dt>
-                  <dd class="descripcion">Carne madurada 45 días para potenciar el sabor y mejorar la textura.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 6,50€ cada 100 gramos</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Chuleton (mínimo 800gr)</dt>
-                  <dd class="descripcion">Si quieres darte un homenaje, este es tu corte.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Chuleton.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 2,80€ cada 100 gramos</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Chuleton madurado (mínimo 800gr)</dt>
-                  <dd class="descripcion">Carne madurada 45 días para potenciar el sabor y mejorar la textura.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 4,90€ cada 100 gramos</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Solomillo de ternera (mínimo 300gr)</dt>
-                  <dd class="descripcion">El corte más gourmet.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Solomillo.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 7,50€ cada 100 gramos</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Churrasco</dt>
-                  <dd class="descripcion">Corte de costilla de ternera al estilo gallego. Acompañado de patatas fritas
-                    o patata asada o ensalada</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Churrasco.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 10,00€ </dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Parrillada de carne</dt>
-                  <dd class="descripcion">Lomo de cerdo, pechuga de pollo, churrasco. Para los que lo quieren probar
-                    todo</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 14,00€</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Torrada</dt>
-                  <dd class="descripcion">Sobrasada, panceta, butifarrón y longaniza.Lo mejores cortes de Mallorca.
-                  </dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 10,00€</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Chuletas de cordero</dt>
-                  <dd class="descripcion">Chuletas de cordero a la brasa aliñadas.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Cordero.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 16,00€</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="accordion accordion-item">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#BurguerCollapse"
-          aria-expanded="false" aria-controls="BurguerCollapse">
-          <h2 class="accordion-header" id="Burguer">Hamburguesas (200gr de carne) con patatas fritas</h2>
-        </button>
-        <div id="BurguerCollapse" class="accordion-collapse collapse" aria-labelledby="Burguer">
-          <div class="accordion-body">
-            <dl>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Clasica</dt>
-                  <dd class="descripcion">Lechuga, tomate, y queso.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Burguer1.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 10,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Huevo, Lacteos.</dd>
-                  </dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Vulcano</dt>
-                  <dd class="descripcion">A la clásica le añadimos bacon, huevo, y salsa Vulcano.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Burguer2.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 11,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Huevo, Lacteos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Balear</dt>
-                  <dd class="descripcion">Sobrasada, camaiot, queso mahones, lechuga, tomate.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 11,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Huevo, Lacteos.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Ibérica</dt>
-                  <dd class="descripcion">Jamón ibérico, bacon y queso.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Burguer3.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 12,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Huevo, Lacteos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Gourmet</dt>
-                  <dd class="descripcion">Queso azul, mermelada de arandanos, tomate y lechuga.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 12,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Huevo, Lacteos.</dd>
-                </div>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="accordion accordion-item">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#MarCollapse"
-          aria-expanded="false" aria-controls="MarCollapse">
-          <h2 class="accordion-header" id="Mar">Algo del mar</h2>
-        </button>
-        <div id="MarCollapse" class="accordion-collapse collapse" aria-labelledby="Mar">
-          <div class="accordion-body">
-            <dl>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Calamar a la brasa</dt>
-                  <dd class="descripcion">Acompañado de patatas fritas, asada o ensalada.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/CalamarBrasa.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: Según mercado</dd>
-                  <dd class="alergenos">Alergenos: Moluscos.</dd>
-                  </dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Sepia a la brasa</dt>
-                  <dd class="descripcion">Acompañado de patatas fritas, asada o ensalada.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/SepiaBrasa.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 16,00€</dd>
-                  <dd class="alergenos">Alergenos: Moluscos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Gambas langostineras a la brasa</dt>
-                  <dd class="descripcion">Acompañado de patatas fritas, asada o ensalada.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/GambasBrasa.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 14,00€</dd>
-                  <dd class="alergenos">Alergenos: Moluscos.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Pulpo a la gallega</dt>
-                  <dd class="descripcion">Pulpo, mezcla de pimentón dulce y picante, patata y aceite de oliva virgen
-                    extra. Combinación perfecta.</dd>
-                    <img class="imgCarta img-fluid" src="/src/img/Carta/PulpoGallega.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: Según mercado</dd>
-                  <dd class="alergenos">Alergenos: Moluscos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Pulpo a la brasa</dt>
-                  <dd class="descripcion">Acompañado de patatas fritas, asada o ensalada.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/PulpoBrasa.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: Según mercado</dd>
-                  <dd class="alergenos">Alergenos: Moluscos.</dd>
-                </div>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="accordion accordion-item">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#NiñosCollapse"
-          aria-expanded="false" aria-controls="NiñosCollapse">
-          <h2 class="accordion-header" id="Niños">Para los niños. Incluye una bebida y un postre (máximo 12 años)</h2>
-        </button>
-        <div id="NiñosCollapse" class="accordion-collapse collapse" aria-labelledby="Niños">
-          <div class="accordion-body">
-            <dl>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Menú Escalope</dt>
-                  <dd class="descripcion">Escalope de pollo acompañado de huevo frito y patatas fritas.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/PolloEmpanado.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 8,50€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Huevo.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Menú Calamar</dt>
-                  <dd class="descripcion">Calamar crujiente acompañado de croquetas y patatas fritas.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 8,50€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Lacteos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Menú Espaguetis</dt>
-                  <dd class="descripcion">Espaguetis con salsa boloñesa.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/SpaBolo.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 8,50€</dd>
-                  <dd class="alergenos">Alergenos: Gluten.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Menú Hamburguesa</dt>
-                  <dd class="descripcion">Hamburguesa de ternera acompañada de huevo frito y patatas fritas.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 8,50€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Huevo.</dd>
-                </div>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="accordion accordion-item">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#VegetalCollapse"
-          aria-expanded="false" aria-controls="VegetalCollapse">
-          <h2 class="accordion-header" id="Vegetal">Algo vegetal</h2>
-        </button>
-        <div id="VegetalCollapse" class="accordion-collapse collapse" aria-labelledby="Vegetal">
-          <div class="accordion-body">
-            <dl>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Parrillada de hortalizas</dt>
-                  <dd class="descripcion">Pimiento, cebolla, tomate, calabacín y berenjena a la parrilla.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/ParrilladaVerduras.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 6,00€ Media. 10,00€ Entera.</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Hamburguesa vegetariana</dt>
-                  <dd class="descripcion">Hamburguesa de lentejas, queso, lechuga, tomate y cebolla.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 10,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Espaguetis</dt>
-                  <dd class="descripcion">Espaguetis con salsa de tomate y oregano.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/SpaTomate.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 8,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Ensalada vegetal</dt>
-                  <dd class="descripcion">Lechuga, cebolla, tomate, zanahoria, alcachofa y maíz.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 7,50€</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="accordion accordion-item">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#MallorcaCollapse"
-          aria-expanded="false" aria-controls="MallorcaCollapse">
-          <h2 class="accordion-header" id="Mallorca">Un poco de Mallorca</h2>
-        </button>
-        <div id="MallorcaCollapse" class="accordion-collapse collapse" aria-labelledby="Mallorca">
-          <div class="accordion-body">
-            <dl>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Tumbet</dt>
-                  <dd class="descripcion">Pimiento, patata, calabacin y berenjena asada con salsa de tomate</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Tumbet.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 7,50€</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Huevos con Tumbet</dt>
-                  <dd class="descripcion">Tumbet acompañado con huevos fritos</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/TumbetHuevo.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 8,50€</dd>
-                  <dd class="alergenos">Alergenos: Huevo.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Lomo con Tumbet</dt>
-                  <dd class="descripcion">Tumbet acompañado con lomo a la plancha</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 9,50€</dd>
-                  <dd class="alergenos">Alergenos: Ninguno.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Sopas Mallorquinas</dt>
-                  <dd class="descripcion">Sopa semi seca con cerdo, col, cebolla y ajo entre otros ingredientes.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/SopasMallorquinas.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 8,00€</dd>
-                  <dd class="alergenos">Alergenos: Gluten.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Caracoles con Alioli</dt>
-                  <dd class="descripcion">Caracoles guisados acompañados de salsa Alioli.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Caracoles.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 8,00€</dd>
-                  <dd class="alergenos">Alergenos: Huevo.</dd>
-                </div>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="accordion accordion-item">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#EnsaladaCollapse"
-          aria-expanded="false" aria-controls="EnsaladaCollapse">
-          <h2 class="accordion-header" id="Ensalada">Algo fresco, ensaladas</h2>
-        </button>
-        <div id="EnsaladaCollapse" class="accordion-collapse collapse" aria-labelledby="Ensalada">
-          <div class="accordion-body">
-            <dl>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Queso de cabra</dt>
-                  <dd class="descripcion">Lechuga, cebolla, tomate, zanahoria, alcachofa y maíz</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/EnsCabra.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 7,50€</dd>
-                  <dd class="alergenos">Alergenos: Lacteos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Vulcano</dt>
-                  <dd class="descripcion">Lechuga, tomate, cebolla frita, atún, queso y alcachofa</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 7,50€</dd>
-                  <dd class="alergenos">Alergenos: Lacteos, Pescado.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>César</dt>
-                  <dd class="descripcion">Lechuga, pollo, picatostes, parmesano, aceitunas y salsa césar</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/EnsCesar.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 7,50€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Lacteos.</dd>
-                </div>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="accordion accordion-item">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#HuevosCollapse"
-          aria-expanded="false" aria-controls="HuevosCollapse">
-          <h2 class="accordion-header" id="Huevos">Una de huevos fritos con patatas</h2>
-        </button>
-        <div id="HuevosCollapse" class="accordion-collapse collapse" aria-labelledby="Huevos">
-          <div class="accordion-body">
-            <dl>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Con jamón serrano o chorizo</dt>
-                  <dd class="descripcion">Dos huevos fritos sobre una cama de patatas fritas con jamón o chorizo</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/HuevosChorizo.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 8,00€</dd>
-                  <dd class="alergenos">Alergenos: Huevo.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Con jamón ibérico</dt>
-                  <dd class="descripcion">Dos huevos fritos sobre una cama de patatas fritas con jamón ibérico</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/HuevosJamon.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 10,00€</dd>
-                  <dd class="alergenos">Alergenos: Huevo.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Con escalope</dt>
-                  <dd class="descripcion">Dos huevos fritos sobre una cama de patatas fritas con escalope de pollo </dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/HuevosEscalope.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 8,50€</dd>
-                  <dd class="alergenos">Alergenos: Gluten, Huevo.</dd>
-                  </dd>
-                </div>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="accordion accordion-item">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#DulceCollapse"
-          aria-expanded="false" aria-controls="DulceCollapse">
-          <h2 class="accordion-header" id="Dulce">Lo más dulce</h2>
-        </button>
-        <div id="DulceCollapse" class="accordion-collapse collapse" aria-labelledby="Dulce">
-          <div class="accordion-body">
-            <dl>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Flan</dt>
-                  <dd class="descripcion">Flan de huevo acompañado con nata montada y caramelo</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Flan.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 2,50€</dd>
-                  <dd class="alergenos">Alergenos: Huevo, Lacteos, Gluten, Frutos secos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Pudin</dt>
-                  <dd class="descripcion">Pudin casero acompañado con nata montada y caramelo</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Pudin.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 2,50€</dd>
-                  <dd class="alergenos">Alergenos: Huevo, Lacteos, Gluten, Frutos secos.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Queso con membrillo</dt>
-                  <dd class="descripcion">Queso manchego acompañado de membrillo</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 4,50€</dd>
-                  <dd class="alergenos">Alergenos: Huevo, Lacteos.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Brownie de chocolate</dt>
-                  <dd class="descripcion">Brownie con helado acompañado de una bola de helado de vainilla</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Brownie.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 4,50€</dd>
-                  <dd class="alergenos">Alergenos: Huevo, Lacteos, Gluten, Frutos secos, Cacahuete, Soja.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Coulant de chocolate</dt>
-                  <dd class="descripcion">Coulant de chocolate acompañado de una bola de helado de vainilla</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Coulant.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 4,50€</dd>
-                  <dd class="alergenos">Alergenos: Huevo, Lacteos, Gluten, Frutos secos, Cacahuete, Soja.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Gató de almendras</dt>
-                  <dd class="descripcion">Bizcocho de almendras típico mallorquin acompañado de una bola de helado de almendras</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Gato.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 4,50€</dd>
-                  <dd class="alergenos">Alergenos: Huevo, Lacteos, Gluten, Frutos secos, Cacahuete, Soja.</dd>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Cañitas de la abuela</dt>
-                  <dd class="descripcion">Cañitas de hojaldre típicas de Galicia rellenas de crema pastelera</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/Canyintas.jpg" alt="No hay imagen">
-                  <dd class="precio">Precio: 4,50€</dd>
-                  <dd class="alergenos">Alergenos: Huevo, Lacteos, Gluten.</dd>
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Tarta de Santiago</dt>
-                  <dd class="descripcion">Tarta de almendras típica de Galicia</dd>
-                  <dd class="precio">Precio: 4,50€</dd>
-                  <dd class="alergenos">Alergenos: Huevo, Lacteos, Gluten, Frutos secos, Soja.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/TartaSantiago.jpg" alt="No hay imagen">
-                </div>
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Tarta de queso de la viña</dt>
-                  <dd class="descripcion">Tarta de queso casera al estilo de la viña</dd>
-                  <dd class="precio">Precio: 4,50€</dd>
-                  <dd class="alergenos">Alergenos: Huevo, Lacteos, Gluten, Frutos secos, Soja.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/TartaQueso.jpg" alt="No hay imagen">
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-12 col-lg-4 text-center">
-                  <dt>Un poco de todo</dt>
-                  <dd class="descripcion">Variado de postres.</dd>
-                  <dd class="precio">Precio: 15,00€</dd>
-                  <dd class="alergenos">Alergenos: Huevo, Lacteos, Gluten, Frutos secos, Cacahuete, Soja.</dd>
-                  <img class="imgCarta img-fluid" src="/src/img/Carta/placeholder.jpg" alt="No hay imagen">
-                </div>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
     </article>
 
-    <article id="Ubicacion" class="tab-pane fade">
-      <h1 class="text-center">Ubicación y horario</h1>
-      <section class="row">
-        <div class="col-xl-6 col-sm-12 row justify-content-center">
-          <h2 class="text-center">Ubicación</h2>
-          <p class="text-center">Nuestra brasería se encuentra ubicada en <a target="_blank"
-              href="https://www.google.com/maps/place/Vulcano+Brasería+Cafetería/@39.575144,2.658753,18z/data=!4m5!3m4!1s0x0:0x4fc1ab3bb8781186!8m2!3d39.5751516!4d2.6587375?hl=es">
-              Carrer Aragó nº31</a>, a pocos metros del centro de Palma.</p>
-          <iframe id="Mapa" class="mx-auto d-block img-fluid col-11"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.298128816024!2d2.6585477802071638!3d39.57493612720438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4fc1ab3bb8781186!2sVulcano%20Braser%C3%ADa%20Cafeter%C3%ADa!5e0!3m2!1ses!2ses!4v1666006975263!5m2!1ses!2ses"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="container col-xl-6 col-sm-12 row justify-content-center">
-          <div id="Horario" class="col-8 text-center">
-            <h2>Horario</h2>
-            <h3>De Martes a Sabado</h3>
-            <h4>De <time>8:30h</time> a <time>23:00h</time></h4>
-            <h3>Domingo</h3>
-            <h4>De <time>9:00h</time> a <time>16:00h</time></h4>
-            <h3>LUNES CERRADO</h3>
-          </div>
-        </div>
+    <article id="LaboralCV" class="tab-pane fade">
+      <h1 class="text-center">¿Donde he trabajado?</h1>
+      <section class="row text-center ">
+
       </section>
     </article>
 
     <article id="Contacto" class="tab-pane fade">
-      <h1 class="text-center">Contacto</h1>
+      <h1 class="text-center">¿Como hablar conmigo?</h1>
       <section>
-        <p class="text-center"> Para contactar con el restaurante llame al <a href="tel:971068074">971068074</a> o
-          envie un correo a la dirección
-          <a href="mailto:vulcanoaragon31@gmail.com">vulcanoaragon31@gmail.com</a>. Si lo prefiere puede rellenar el
-          siguiente formulario y nos pondremos en contacto con usted en la mayor brevedad posible.
+        <p class="text-center"> Puedes contactar conmigo tanto vía <a href="https://wa.me/34697443132">whatsap</a> o
+          envie un correo a la dirección <a href="mailto:edugonzalezlorenzo@gmail.com">edugonzalezlorenzo@gmai.com</a>.
         </p>
       </section>
       <section>
         <h2 class="text-center">Formulario</h2>
-        <p class="text-center">Para realizar una reserva le invitamos a completar el siguiente formulario y nos
-          pondremos en contacto con usted con la mayor brevedad posible:</p>
+        <p class="text-center">Si lo prefieres, puedes dejar aquí tus datos de contacto y me pondré en contacto contigo
+          en cuanto pueda.
+        </p>
         <form class="container" action="contacto.php" method="post">
           <div class="row">
             <label for="nombreyapellidos"> Nombre y apellidos: </label>
@@ -786,16 +104,8 @@
             <label for="comentarios">Comentarios:</label>
             <textarea id="comentarios" name="comentarios"></textarea>
           </div>
-          <div class="row fechahora">
-            <label for="reserva">Fecha de reserva: </label>
-            <input type="date" id="reserva" name="reserva" value="2022-10-28" min="2022-10-28" max="2023-10-28">
-          </div>
-          <div class="row fechahora">
-            <label for="hora">Hora de la reserva:</label>
-            <input type="time" id="hora" name="hora" min="09:00" max="20:00" required>
-          </div>
           <div id="terminos">
-            <input type="checkbox" id="condiciones" name="condiciones">
+            <input type="checkbox" id="condiciones" name="condiciones" required>
             <label for="condiciones">Aceptar <a href="index.html">terminos y
                 condiciones.</a></label>
           </div>
