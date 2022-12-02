@@ -2,167 +2,107 @@
   font-family: intelliJFont;
   src: url(fonts/JetBrainsMono[wght].ttf);
 }
+
 @font-face {
   font-family: intelliJFontItalic;
   src: url(fonts/JetBrainsMono-Italic[wght].ttf);
 }
 
-*{
-  font-family:intelliJFontItalic;
-}
-
-header {
-  background-color: black;
-}
-
- body {
-  background-image: url("img/BackgroundEscenario.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  } 
-
-h1 {
-  font-size: 40px;
-  position: relative;
-  color: white;
-}
-
-article {
-  background-color: rgba(0, 0, 0, 0.850);
-  color: white;
-  margin-right: 5%;
-  margin-left: 5%;
-  padding: 2%;
-}
-
-li{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: intelliJFont;
   font-size: 20px;
+  color: white;
 }
 
-section {
-  padding: 20px;
-  margin: 20px;
+body{
+  min-height: 100vh;
 }
-
-.informacion {
-  align-self: center;
-  padding: 10%;
+aside {
+  background-color: #404345;
+  padding: 1%;
 }
 
 main {
-  padding: 100px;
+  background-color: #272727;
 }
 
-/* CSS Carta*/
-
-dt {
-  padding-top: 5%;
-  font-size: larger;
+li:hover {
+  background-color: #343638;
 }
 
-
-dl>div>div {
-  border-bottom: 1px solid;
+.orangeText {
+  color: orange;
 }
 
-.imgCarta{
-  width: 200px;
-  margin: 10px;
-}
-
-.precio{
-  font-size: large;
-  font-weight: bold;
-}
-
-.alergenos{
-  color:rgb(255, 0, 0);
-}
-
-/*CSS Horario y Mapa*/
-
-#Horario {
-  align-self: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#Mapa {
-  min-height: 400px;
-  max-width: 500px;
-  padding: 5%;
-}
-
-
-/* CSS contacto*/
-
-.fechahora {
-  width: min-content;
-}
-
-#Contacto form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-label {
-  margin: 20px 0 2px;
-}
-
-input, select, textarea {
-  min-width: 280px;
-  max-width: 30%;
-}
-
-#terminos > label{
-  font-size: 13px;
-  
-}
-
-#terminos {
-  margin: 20px 0;
-}
-
-#terminos input {
-  max-width: none;
-  min-width: 0;
-  cursor: pointer;
-}
-
-.boton {
-  width: fit-content;
-  max-width: none;
-  min-width: 0;
-  padding: 5px;
-  margin: 20px 0;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.boton:hover {
-  background-color: gray;
+.whiteText {
   color: white;
 }
 
-form > div {
-  margin-top: 2%;
-  
+.yellowText {
+  color: rgb(255, 225, 0);
 }
 
-/* Footer css*/
-footer {
-  background-color: white;
-  padding: 2%;
-  position: fixed;
+.functionContent {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#LineCounter {
+  background-color: #2B2B2B;
+}
+
+article {
+  margin-top: 4%;
+  margin-left: -50px;
+}
+
+section {
+  margin-top: 2%;
+}
+
+iframe {
   bottom: 0;
 }
 
-footer>a {
-  margin: 1%;
+/*Modificaciones bootstrap*/
+.row {
+  --bs-gutter-x: 0 !important;
 }
 
-.fa:hover {
-  opacity: 0.5;
+/* Media queries*/
+@media all and (max-width: 1000px) {
+  aside {
+    text-align: center;
+  }
+
+  #LineCounter {
+    display: none;
+  }
+
+  iframe {
+    width: 100%;
+    display: none;
+  }
+}
+
+@media all and (max-width: 850px) {
+  * {
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  * {
+    font-size: 10px;
+  }
+  span {
+    font-size: 8px;
+  }
 }
