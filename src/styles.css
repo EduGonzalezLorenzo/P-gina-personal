@@ -1,3 +1,13 @@
+:root {
+  --text-color: rgb(228, 228, 228);
+  --background-aside: #404345;
+  --background-main: #272727;
+  --yellow:rgb(255, 225, 0);
+  --purple: rgb(197, 0, 197);
+  --green: rgb(93, 179, 93);
+  --background-counter: #2B2B2B;
+}
+
 @font-face {
   font-family: intelliJFont;
   src: url(fonts/JetBrainsMono[wght].ttf);
@@ -14,7 +24,7 @@
   box-sizing: border-box;
   font-family: intelliJFont;
   font-size: 15px;
-  color: white;
+  color: var(--text-color);
 }
 
 body {
@@ -22,21 +32,21 @@ body {
 }
 
 aside {
-  background-color: #404345;
+  background-color: var(--background-aside);
   padding: 1%;
 }
 
 main {
-  background-color: #272727;
+  background-color: var(--background-main);
   min-height: 90vh;
 }
 
 li:hover {
-  background-color: #343638;
+  background-color: var(--background-main);
 }
 
-h1 {
-  margin-left: 10%;
+h1, h2 {
+  color: white;
 }
 
 .orangeText {
@@ -48,7 +58,15 @@ h1 {
 }
 
 .yellowText {
-  color: rgb(255, 225, 0);
+  color: var(--yellow);
+}
+
+.purpleText {
+  color: var(--purple);
+}
+
+.greenText {
+  color: var(--green);
 }
 
 .functionContent {
@@ -57,7 +75,7 @@ h1 {
 }
 
 #LineCounter {
-  background-color: #2B2B2B;
+  background-color: var(--background-counter);
 }
 
 article {
@@ -65,10 +83,18 @@ article {
   margin-left: -50px;
 }
 
-
-iframe{
+iframe {
   position: absolute;
   bottom: 0;
+}
+
+form, p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+input{
+  color: black;
 }
 
 /* Modificaciones bootstrap */
@@ -94,7 +120,7 @@ iframe{
     display: none;
   }
 
-  article{
+  article {
     margin-left: 5%;
   }
 }
@@ -108,7 +134,7 @@ iframe{
     font-size: 12px;
   }
 
-  article{
+  article {
     margin-left: 1%;
   }
 }
@@ -121,7 +147,8 @@ iframe{
   span {
     font-size: 9px;
   }
-  article{
+
+  article {
     margin: 1%;
   }
 }

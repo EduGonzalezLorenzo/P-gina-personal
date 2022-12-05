@@ -6,6 +6,7 @@
   <title>Personal web</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="apple-touch-icon" sizes="57x57" href="./img/favIcon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./img/favIcon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="./img/favIcon/apple-icon-72x72.png">
@@ -44,8 +45,24 @@
           aria-current="page">Experiencia laboral</a>
       </li>
       <li class="nav-item">
-        <a href="#Contacto" class="col-12 nav-link text-decoration-none text-white" data-bs-toggle="tab"
-          aria-current="page">Contacto</a>
+        <a href="#Portafolio" class="col-12 nav-link text-decoration-none text-white" data-bs-toggle="tab"
+          aria-current="page">Portafolio</a>
+      </li>
+      <l class="nav-item">
+        <a class="btn text-white nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
+          aria-controls="collapseExample" data-bs-target="#collapseExample">
+          Social
+        </a>
+        <div class="collapse text-center" id="collapseExample">
+          <a class="btn bg-primary" target="_blank"
+            href="https://www.linkedin.com/in/edu-gonzález-lorenzo-626698217/"><i class="fa fa-linkedin"></i></a>
+          <a class="btn bg-warning" target="_blank" href="https://github.com/ElTambores"><i
+              class="fa fa-github"></i></a>
+          <a class="btn bg-success" target="_blank" href="https://wa.me/34697443132" role="button"><i
+              class="fa fa-whatsapp"></i></a>
+          <a class="btn bg-danger" target="_blank" href="mailto:edugonzalezlorenzo@gmail.com" role="button"><i
+              class="fa fa-google"></i></a>
+        </div>
       </li>
     </ul>
     <iframe style="border-radius:12px"
@@ -64,27 +81,27 @@
 01     <span class="orangeText">public class</span> <span class="whiteText">DescripciónPersonal {</span>
 02
 03       <span class="orangeText">public static void</span><span class="yellowText"> miVida()</span> {
-04         String descripcion = 
-05           "Nacido el 24 de abril de 1994 en Palma de Mallorca.
-06           Desde joven siempre me interesó la tecnología, afición
-07           iniciada por los videojuegos y afianzada con los años
-08           a través de la informática y la electrónica.";
+04         String descripcion =
+05           <span class="greenText">"Nacido el 24 de abril de 1994 en Palma de Mallorca.</span>
+06           <span class="greenText">Desde joven siempre me interesó la tecnología, afición</span>
+07           <span class="greenText">iniciada por los videojuegos y afianzada con los años</span>
+08           <span class="greenText">a través de la informática y la electrónica."</span><span class="orangeText">;</span>
 09       }
 10
 11       <span class="orangeText">public static void</span><span class="yellowText"> aficiones()</span> {
 12         String descripcion = 
-13           "Como he dicho anteriormente siempre me han gustado
-14           los videojuegos, desde los rpg de acción o por turnos
-15           pasando por los plataformas y los cooperativos de salón.
-16           A los 15 años descubrí la batería de un videojuego musical
-17           llamado Rock Band, lo que desperto en mi el interes por el
-18           instrumento real, al cual llevo dedicandome desde entonces
-19           de forma semiprofesional, teniendo dos discos en spotify y
-20           una amplia experiencia. ¡Puedes escuchar uno de ellos si
-21           estas usando un ordenador usando el el reproductor de abajo
-22           a la izquierda!. Además de lo anterior, también disfruto 
-23           mucho de ir con mi mujer y nuestros perros en todo tipo de
-24           viajes y excuriones.";
+13           <span class="greenText">"Como he dicho anteriormente siempre me han gustado</span>
+14           <span class="greenText">los videojuegos, desde los rpg de acción o por turnos</span>
+15           <span class="greenText">pasando por los plataformas y los cooperativos de salón.</span>
+16           <span class="greenText">A los 15 años descubrí la batería de un videojuego musical</span>
+17           <span class="greenText">llamado Rock Band, lo que desperto en mi el interes por el</span>
+18           <span class="greenText">instrumento real, al cual llevo dedicandome desde entonces</span>
+19           <span class="greenText">de forma semiprofesional, teniendo dos discos en spotify y</span>
+20           <span class="greenText">una amplia experiencia. ¡Puedes escuchar uno de ellos si</span>
+21           <span class="greenText">estas usando un ordenador usando el el reproductor de abajo</span>
+22           <span class="greenText">a la izquierda!. Además de lo anterior, también disfruto </span>
+23           <span class="greenText">mucho de ir con mi mujer y nuestros perros en todo tipo de</span>
+24           <span class="greenText">viajes y excuriones."</span><span class="orangeText">;</span>
 25       }
 26
 27     } </span></pre>
@@ -97,26 +114,26 @@
 02        
 03       <span class="orangeText">public static void</span><span class="yellowText"> EstudiosPrincipales()</span> {
 04         String[] estudiosPrincipales = {
-05           "ESO en Juan de la Cierva.",
-06           "Bachiller Tencológico en Sant Josep Obrero.",
-07           "CFGS en Mantenimiento Electrónico en Ies Politécnic.",
-08           "CFGS en Desarrollo de Aplicaciones Web en Es Liceu."
-09         };
+05           <span class="greenText">"ESO en Juan de la Cierva."</span><span class="orangeText">,</span>
+06           <span class="greenText">"Bachiller Tencológico en Sant Josep Obrero."</span><span class="orangeText">,</span>
+07           <span class="greenText">"CFGS en Mantenimiento Electrónico en Ies Politécnic."</span><span class="orangeText">,</span>
+08           <span class="greenText">"CFGS en Desarrollo de Aplicaciones Web en Es Liceu."</span>
+09         }<span class="orangeText">;</span>
 10       }
 11       
 12       <span class="orangeText">public static void</span><span class="yellowText"> EstudiosComplementariosYAptitudes()</span> {
 13         String[] estudiosComplementarios = {
-14           "Nivel 7 de ingles oral por el Trinity College.",
-15           "Curso de reparación de cafeteras por la empresa Expobar",
-16           "Curso de reparación de bombas de infusión por la empresa BD.",
-17           "Castellano y catalán nativo.",
-18           "Carnet de coche tipo B. Coche y moto propias."
-19         };
+14           <span class="greenText">"Nivel 7 de ingles oral por el Trinity College."</span><span class="orangeText">,</span>
+15           <span class="greenText">"Curso de reparación de cafeteras por la empresa Expobar"</span><span class="orangeText">,</span>
+16           <span class="greenText">"Curso de reparación de bombas de infusión por la empresa BD."</span><span class="orangeText">,</span>
+17           <span class="greenText">"Castellano y catalán nativo."</span><span class="orangeText">,</span>
+18           <span class="greenText">"Carnet de coche tipo B. Coche y moto propias."</span>
+19         }<span class="orangeText">;</span>
 20
 21         String[] aptitudes = {
-22           "Habilidad para trabajo en equipo, tanto al mando como subordinado",
-23           "Experiencia en el trato con clientes",
-24         };
+22           <span class="greenText">"Habilidad para trabajo en equipo, tanto al mando como subordinado"</span><span class="orangeText">,</span>
+23           <span class="greenText">"Experiencia en el trato con clientes"</span>
+24         }<span class="orangeText">;</span>
 25       }
 26 
 27     } </span></pre>
@@ -126,39 +143,45 @@
       <h1>¿Donde he trabajado?</h1>
       <pre><span>
 01     <span class="orangeText">public class</span> <span class="whiteText">Trabajo {</span>
-02       String periodo;
-03       String puesto;
-04       String descripcion;
+02       String <span class="purpleText">periodo</span><span class="orangeText">;</span>
+03       String <span class="purpleText">puesto</span><span class="orangeText">;</span>
+04       String <span class="purpleText">descripcion</span><span class="orangeText">;</span>
 05
 06       <span class="orangeText">public static void</span><span class="yellowText"> experienciaLaboral()</span> {
-07         Trabajo truiEspectaculos = new Trabajo();
-08         truiEspectaculos.periodo = "Julio 2018 - Agosto 2018";
-09         truiEspectaculos.puesto = "Electricista de Eventos";
-10         truiEspectaculos.descripcion = "Instalación y supervisión de
-11           equipos e instalaciones electricas, principalmente de los
-12           conciertos del recinto Son Fusteret, verbenas y eventos privados.";
+07         Trabajo truiEspectaculos_SL = <span class="orangeText">new</span> Trabajo()<span class="orangeText">;</span>
+08         truiEspectaculos_SL.<span class="purpleText">periodo</span> = <span class="greenText">"Julio 2018 - Agosto 2018"</span><span class="orangeText">;</span>
+09         truiEspectaculos_SL.<span class="purpleText">puesto</span> = <span class="greenText">"Electricista de Eventos"</span><span class="orangeText">;</span>
+10         truiEspectaculos_SL.<span class="purpleText">descripcion</span> = <span class="greenText">"Instalación y supervisión de</span>
+11           <span class="greenText">equipos e instalaciones electricas, principalmente de los</span>
+12           <span class="greenText">conciertos del recinto Son Fusteret, verbenas y eventos privados."</span><span class="orangeText">;</span>
 13
-14         Trabajo dotechnics = new Trabajo();
-15         dotechnics.periodo = "Septiembre 2018 - Diciembre 2018";
-16         dotechnics.puesto = "Técnico en Electromedicina";
-17         dotechnics.descripcion = "Instalación, reparación y mantenimiento de
-18          equipos de alarma. Empesa subcontratada por Trablisa.";
+14         Trabajo dotechnics_SL = <span class="orangeText">new</span> Trabajo()<span class="orangeText">;</span>
+15         dotechnics_SL.<span class="purpleText">periodo</span> = <span class="greenText">"Septiembre 2018 - Diciembre 2018"</span><span class="orangeText">;</span>
+16         dotechnics_SL.<span class="purpleText">puesto</span> = <span class="greenText">"Técnico en Electromedicina"</span><span class="orangeText">;</span>
+17         dotechnics_SL.<span class="purpleText">descripcion</span> = <span class="greenText">"Instalación, reparación y mantenimiento de</span>
+18          <span class="greenText">equipos de alarma. Empesa subcontratada por Trablisa."</span><span class="orangeText">;</span>
 19
-20         Trabajo medisat = new Trabajo();
-21         medisat.periodo = "Enero 2019 - Mayo 2020";
-22         medisat.puesto = "Técnico en Electromedicina";
-23         medisat.descripcion = "Instalación, reparación y mantenimiento de equipos
-24          medicos. Especialidad en lectoras de rayos X y bombas de infusión.";
+20         Trabajo medisat_SL = <span class="orangeText">new</span> Trabajo()<span class="orangeText">;</span>
+21         medisat_SL.<span class="purpleText">periodo</span> = <span class="greenText">"Enero 2019 - Mayo 2020"</span><span class="orangeText">;</span>
+22         medisat_SL.<span class="purpleText">puesto</span> = <span class="greenText">"Técnico en Electromedicina"</span><span class="orangeText">;</span>
+23         medisat_SL.<span class="purpleText">descripcion</span> = <span class="greenText">"Instalación, reparación y mantenimiento de equipos</span>
+24          <span class="greenText">medicos. Especialidad en lectoras de rayos X y bombas de infusión."</span><span class="orangeText">;</span>
 25       }       
 26
 27     } </span></pre>
     </article>
 
-    <article id="Contacto" class="tab-pane fade">
-      <h1 class="text-center">¿Como hablar conmigo?</h1>
+    <article id="Portafolio" class="tab-pane fade">
+      <h1 class="text-center">¿Que he hecho?</h1>
       <section>
-        <p class="text-center"> Puedes contactar conmigo tanto vía <a href="https://wa.me/34697443132">whatsap</a> o
-          envie un correo a la dirección <a href="mailto:edugonzalezlorenzo@gmail.com">edugonzalezlorenzo@gmai.com</a>.
+        <p class="text-center"> Puedes contactar conmigo por <a class="text-success" href="https://wa.me/34697443132"
+            target="_blank">Whatsapp</a>, o
+          envie un correo a la dirección <a class="text-danger" href="mailto:edugonzalezlorenzo@gmail.com"
+            target="_blank">edugonzalezlorenzo@gmai.com</a>.
+        </p>
+        <p>También puedes contactar conmigo y ver una versión más extendida de mi curriculum y experiencia laboral a
+          través de mi perfil de
+          <a href="https://www.linkedin.com/in/edu-gonzález-lorenzo-626698217/" target="_blank">Linkedin</a>.
         </p>
       </section>
       <section>
@@ -166,7 +189,7 @@
         <p class="text-center">Si lo prefieres, puedes dejar aquí tus datos de contacto y me pondré en contacto contigo
           en cuanto pueda.
         </p>
-        <form class="container" action="contacto.php" method="post">
+        <form action="contacto.php" method="post">
           <div class="row">
             <label for="nombreyapellidos"> String nombre_Y_Apellidos = </label>
             <input type="text" id="nombreyapellidos" name="nombreyapellidos">
@@ -188,7 +211,7 @@
             <label for="condiciones">Aceptar <a href="index.html">terminos y
                 condiciones.</a></label>
           </div>
-          <input class="boton" type="submit" value="Contactar">
+          <input class="btn btn-secondary" class="boton" type="submit" value="Contactar">
         </form>
       </section>
     </article>
