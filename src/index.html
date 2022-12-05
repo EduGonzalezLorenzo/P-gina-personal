@@ -48,8 +48,8 @@
           aria-current="page">Contacto</a>
       </li>
     </ul>
-    <iframe class="position-absolute bottom-0 start-0" style="border-radius:12px"
-      src="https://open.spotify.com/embed/artist/3RsMq1s4VnXCRg4CJc3Vks?utm_source=generator&theme=0" width="16.6%"
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/artist/3RsMq1s4VnXCRg4CJc3Vks?utm_source=generator&theme=0" width="100%"
       height="200" frameBorder="0" allowfullscreen=""
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </aside>
@@ -58,46 +58,100 @@
 
   <main class="tab-content col-12 col-lg-9">
     <article id="InfoPers" class="tab-pane fade show active">
-      <h1 class="text-center">¿Quién soy?</h1>
-      <section>
-        <!-- Máximo 60 caracteres por linea -->
-        <pre>
-01      <span class="orangeText">public class</span> <span class="whiteText">DescripciónPersonal {</span>
+      <h1>¿Quién soy?</h1>
+      <!-- Máximo 60 caracteres por linea -->
+      <pre> <span>
+01     <span class="orangeText">public class</span> <span class="whiteText">DescripciónPersonal {</span>
 02
 03       <span class="orangeText">public static void</span><span class="yellowText"> miVida()</span> {
-04          <span>String descripcion = 
-05              "Nacido el 24 de abril de 1994 en Palma de Mallorca.
-06              Desde joven siempre me interesó la tecnología, afición
-07              iniciada por los videojuegos y afianzada con los años
-08              a través de la informática y la electrónica.";
-09          }</span>
-09
-10       <span class="orangeText">public static void</span><span class="yellowText"> aficiones()</span> {
-11          <span>String descripcion = 
-12              "Como he dicho anteriormente siempre me han gustado
-13              los videojuegos, desde los rpg de acción o por turnos
-14              pasando por los plataformas y los cooperativos de salón.
-15              A los 15 años descubrí la batería de un videojuego musical
-16              llamado Rock Band, lo que desperto en mi el interes por el
-17              instrumento real, al cual llevo dedicandome desde entonces
-18              de forma semiprofesional, teniendo dos discos en spotify y
-19              una amplia experiencia. Además de lo anterior, también 
-20              disfruto mucho de ir con mi mujer y nuestros perros en todo
-21              tipo de excuriones.";
-22          }</span>
-23
-24      }
-        </pre>
-      </section>
+04         String descripcion = 
+05           "Nacido el 24 de abril de 1994 en Palma de Mallorca.
+06           Desde joven siempre me interesó la tecnología, afición
+07           iniciada por los videojuegos y afianzada con los años
+08           a través de la informática y la electrónica.";
+09       }
+10
+11       <span class="orangeText">public static void</span><span class="yellowText"> aficiones()</span> {
+12         String descripcion = 
+13           "Como he dicho anteriormente siempre me han gustado
+14           los videojuegos, desde los rpg de acción o por turnos
+15           pasando por los plataformas y los cooperativos de salón.
+16           A los 15 años descubrí la batería de un videojuego musical
+17           llamado Rock Band, lo que desperto en mi el interes por el
+18           instrumento real, al cual llevo dedicandome desde entonces
+19           de forma semiprofesional, teniendo dos discos en spotify y
+20           una amplia experiencia. ¡Puedes escuchar uno de ellos si
+21           estas usando un ordenador usando el el reproductor de abajo
+22           a la izquierda!. Además de lo anterior, también disfruto 
+23           mucho de ir con mi mujer y nuestros perros en todo tipo de
+24           viajes y excuriones.";
+25       }
+26
+27     } </span></pre>
     </article>
 
     <article id="EstudiosCV" class="tab-pane fade">
-      <h1 class="text-center">¿Que he estudiado?</h1>
-      <section>Hola</section>
+      <h1>¿Que he estudiado?</h1>
+      <pre><span>
+01     <span class="orangeText">public class</span> <span class="whiteText">Estudios {</span>
+02        
+03       <span class="orangeText">public static void</span><span class="yellowText"> EstudiosPrincipales()</span> {
+04         String[] estudiosPrincipales = {
+05           "ESO en Juan de la Cierva.",
+06           "Bachiller Tencológico en Sant Josep Obrero.",
+07           "CFGS en Mantenimiento Electrónico en Ies Politécnic.",
+08           "CFGS en Desarrollo de Aplicaciones Web en Es Liceu."
+09         };
+10       }
+11       
+12       <span class="orangeText">public static void</span><span class="yellowText"> EstudiosComplementariosYAptitudes()</span> {
+13         String[] estudiosComplementarios = {
+14           "Nivel 7 de ingles oral por el Trinity College.",
+15           "Curso de reparación de cafeteras por la empresa Expobar",
+16           "Curso de reparación de bombas de infusión por la empresa BD.",
+17           "Castellano y catalán nativo.",
+18           "Carnet de coche tipo B. Coche y moto propias."
+19         };
+20
+21         String[] aptitudes = {
+22           "Habilidad para trabajo en equipo, tanto al mando como subordinado",
+23           "Experiencia en el trato con clientes",
+24         };
+25       }
+26 
+27     } </span></pre>
     </article>
 
     <article id="LaboralCV" class="tab-pane fade">
-      <h1 class="text-center">¿Donde he trabajado?</h1>
+      <h1>¿Donde he trabajado?</h1>
+      <pre><span>
+01     <span class="orangeText">public class</span> <span class="whiteText">Trabajo {</span>
+02       String periodo;
+03       String puesto;
+04       String descripcion;
+05
+06       <span class="orangeText">public static void</span><span class="yellowText"> experienciaLaboral()</span> {
+07         Trabajo truiEspectaculos = new Trabajo();
+08         truiEspectaculos.periodo = "Julio 2018 - Agosto 2018";
+09         truiEspectaculos.puesto = "Electricista de Eventos";
+10         truiEspectaculos.descripcion = "Instalación y supervisión de
+11           equipos e instalaciones electricas, principalmente de los
+12           conciertos del recinto Son Fusteret, verbenas y eventos privados.";
+13
+14         Trabajo dotechnics = new Trabajo();
+15         dotechnics.periodo = "Septiembre 2018 - Diciembre 2018";
+16         dotechnics.puesto = "Técnico en Electromedicina";
+17         dotechnics.descripcion = "Instalación, reparación y mantenimiento de
+18          equipos de alarma. Empesa subcontratada por Trablisa.";
+19
+20         Trabajo medisat = new Trabajo();
+21         medisat.periodo = "Enero 2019 - Mayo 2020";
+22         medisat.puesto = "Técnico en Electromedicina";
+23         medisat.descripcion = "Instalación, reparación y mantenimiento de equipos
+24          medicos. Especialidad en lectoras de rayos X y bombas de infusión.";
+25       }       
+26
+27     } </span></pre>
     </article>
 
     <article id="Contacto" class="tab-pane fade">

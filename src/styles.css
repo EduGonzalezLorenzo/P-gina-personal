@@ -13,13 +13,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: intelliJFont;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 }
 
-body{
+body {
   min-height: 100vh;
 }
+
 aside {
   background-color: #404345;
   padding: 1%;
@@ -27,10 +28,15 @@ aside {
 
 main {
   background-color: #272727;
+  min-height: 90vh;
 }
 
 li:hover {
   background-color: #343638;
+}
+
+h1 {
+  margin-left: 10%;
 }
 
 .orangeText {
@@ -59,21 +65,23 @@ article {
   margin-left: -50px;
 }
 
-section {
-  margin-top: 2%;
-}
 
-iframe {
+iframe{
+  position: absolute;
   bottom: 0;
 }
 
-/*Modificaciones bootstrap*/
+/* Modificaciones bootstrap */
 .row {
   --bs-gutter-x: 0 !important;
 }
 
 /* Media queries*/
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
+  h1 {
+    text-align: center;
+  }
+
   aside {
     text-align: center;
   }
@@ -83,8 +91,11 @@ iframe {
   }
 
   iframe {
-    width: 100%;
     display: none;
+  }
+
+  article{
+    margin-left: 5%;
   }
 }
 
@@ -96,13 +107,33 @@ iframe {
   span {
     font-size: 12px;
   }
+
+  article{
+    margin-left: 1%;
+  }
+}
+
+@media all and (max-width: 620px) {
+  * {
+    font-size: 13px;
+  }
+
+  span {
+    font-size: 9px;
+  }
+  article{
+    margin: 1%;
+  }
 }
 
 @media all and (max-width: 500px) {
   * {
     font-size: 10px;
   }
+
   span {
-    font-size: 8px;
+    font-size: 6px;
   }
+
+
 }
