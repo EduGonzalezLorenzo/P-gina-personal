@@ -31,9 +31,9 @@ body {
   min-height: 100vh;
 }
 
-aside {
+aside, header {
   background-color: var(--background-aside);
-  padding: 1%;
+  padding-top: 1%;
 }
 
 main {
@@ -47,6 +47,7 @@ li:hover {
 
 h1, h2 {
   color: white;
+  margin-left: 10%;
 }
 
 .orangeText {
@@ -80,7 +81,7 @@ h1, h2 {
 
 article {
   margin-top: 4%;
-  margin-left: -50px;
+  margin-left: -25px;
 }
 
 iframe {
@@ -97,6 +98,18 @@ input{
   color: black;
 }
 
+nav{
+  margin-bottom: 5%;
+}
+
+nav > a{
+  margin: 2%;
+}
+
+header{
+  display: none;
+}
+
 /* Modificaciones bootstrap */
 .row {
   --bs-gutter-x: 0 !important;
@@ -104,18 +117,6 @@ input{
 
 /* Media queries*/
 @media all and (max-width: 1024px) {
-  h1 {
-    text-align: center;
-  }
-
-  aside {
-    text-align: center;
-  }
-
-  #LineCounter {
-    display: none;
-  }
-
   iframe {
     display: none;
   }
@@ -123,11 +124,31 @@ input{
   article {
     margin-left: 5%;
   }
+  span {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  header{
+    display:block;
+    text-align: center;
+  }
+  aside{
+    display: none;
+  }
+  #LineCounter {
+    display: none;
+  }
 }
 
 @media all and (max-width: 850px) {
   * {
     font-size: 18px;
+  }
+
+  h1 {
+    text-align: center;
   }
 
   span {
@@ -141,7 +162,7 @@ input{
 
 @media all and (max-width: 620px) {
   * {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   span {
@@ -155,12 +176,20 @@ input{
 
 @media all and (max-width: 500px) {
   * {
+    font-size: 12px;
+  }
+
+  span {
+    font-size: 8px;
+  }
+}
+
+@media all and (max-width: 430px) {
+  * {
     font-size: 10px;
   }
 
   span {
     font-size: 6px;
   }
-
-
 }

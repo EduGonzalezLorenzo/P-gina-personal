@@ -29,8 +29,8 @@
 </head>
 
 <body class="row" data-bs-target=".navbar" data-bs-offset="50">
-  <aside class="col-12 col-lg-2 sticky-top">
-    <p class="fs-3 text-white text-center">Projecto</p>
+  <aside class="col-2 sticky-top">
+    <p class="fs-3 text-white text-center">Proyecto</p>
     <ul class="nav row nav-pills" role="tablist">
       <li class="nav-item">
         <a href="#InfoPers" class="col-12 nav-link active text-decoration-none text-white" data-bs-toggle="tab"
@@ -48,12 +48,12 @@
         <a href="#Portafolio" class="col-12 nav-link text-decoration-none text-white" data-bs-toggle="tab"
           aria-current="page">Portafolio</a>
       </li>
-      <l class="nav-item">
-        <a class="btn text-white nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false"
-          aria-controls="collapseExample" data-bs-target="#collapseExample">
+      <li class="nav-item">
+        <a class="col-12 nav-link text-decoration-none text-white" data-bs-toggle="collapse" role="button"
+          data-bs-target="#socialDesktop">
           Social
         </a>
-        <div class="collapse text-center" id="collapseExample">
+        <nav class="collapse text-center" id="socialDesktop">
           <a class="btn bg-primary" target="_blank"
             href="https://www.linkedin.com/in/edu-gonzález-lorenzo-626698217/"><i class="fa fa-linkedin"></i></a>
           <a class="btn bg-warning" target="_blank" href="https://github.com/ElTambores"><i
@@ -62,7 +62,7 @@
               class="fa fa-whatsapp"></i></a>
           <a class="btn bg-danger" target="_blank" href="mailto:edugonzalezlorenzo@gmail.com" role="button"><i
               class="fa fa-google"></i></a>
-        </div>
+        </nav>
       </li>
     </ul>
     <iframe style="border-radius:12px"
@@ -71,12 +71,53 @@
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </aside>
 
+  <header class="col-12 sticky-top">
+    <a class="fs-3 col-12 nav-link text-decoration-none text-white" data-bs-toggle="collapse" role="button"
+      data-bs-target="#mobileNav">
+      Proyecto <span class="dropdown-toggle">
+    </a>
+    <nav class="collapse text-center" id="mobileNav">
+      <ul class="nav row nav-pills" role="tablist">
+        <li class="nav-item">
+          <a href="#InfoPers" class="col-12 nav-link active text-decoration-none text-white" data-bs-toggle="tab"
+            aria-current="page">Información personal</a>
+        </li>
+        <li class="nav-item">
+          <a href="#EstudiosCV" class="col-12 nav-link text-decoration-none text-white" data-bs-toggle="tab"
+            aria-current="page">Estudios</a>
+        </li>
+        <li class="nav-item">
+          <a href="#LaboralCV" class="col-12 nav-link text-decoration-none text-white" data-bs-toggle="tab"
+            aria-current="page">Experiencia laboral</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Portafolio" class="col-12 nav-link text-decoration-none text-white" data-bs-toggle="tab"
+            aria-current="page">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="col-12 nav-link text-decoration-none text-white" data-bs-toggle="collapse" role="button"
+            data-bs-target="#socialMobile">
+            Social
+          </a>
+          <nav class="collapse text-center" id="socialMobile">
+            <a class="btn bg-primary" target="_blank" href="https://www.linkedin.com/in/edu-gonzález-lorenzo-626698217/"><i
+                class="fa fa-linkedin"></i></a>
+            <a class="btn bg-warning" target="_blank" href="https://github.com/ElTambores"><i class="fa fa-github"></i></a>
+            <a class="btn bg-success" target="_blank" href="https://wa.me/34697443132" role="button"><i
+                class="fa fa-whatsapp"></i></a>
+            <a class="btn bg-danger" target="_blank" href="mailto:edugonzalezlorenzo@gmail.com" role="button"><i
+                class="fa fa-google"></i></a>
+          </nav>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
   <div id="LineCounter" class="col-1"></div>
 
   <main class="tab-content col-12 col-lg-9">
     <article id="InfoPers" class="tab-pane fade show active">
       <h1>¿Quién soy?</h1>
-      <!-- Máximo 60 caracteres por linea -->
       <pre> <span>
 01     <span class="orangeText">public class</span> <span class="whiteText">DescripciónPersonal {</span>
 02
