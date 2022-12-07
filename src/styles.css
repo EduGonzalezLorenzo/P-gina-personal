@@ -2,7 +2,7 @@
   --text-color: rgb(228, 228, 228);
   --background-aside: #404345;
   --background-main: #272727;
-  --yellow:rgb(255, 225, 0);
+  --yellow: rgb(255, 225, 0);
   --purple: rgb(197, 0, 197);
   --green: rgb(93, 179, 93);
   --background-counter: #2B2B2B;
@@ -94,21 +94,44 @@ form, p {
   margin-right: 10%;
 }
 
-input{
+input, textarea {
   color: black;
 }
 
-nav{
+nav {
   margin-bottom: 5%;
 }
 
-nav > a{
+nav>a {
   margin: 2%;
 }
 
-header{
+header {
   display: none;
 }
+
+#portfolioTitulo {
+  margin: 0;
+  text-align: center;
+
+}
+
+img {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#carrousel {
+  padding-top: 5%;
+  margin-left: 3%;
+  text-align: center;
+}
+
+.imageCaption {
+  background-color: rgba(0, 0, 0, 0.89);
+  text-align: center;
+}
+
 
 /* Modificaciones bootstrap */
 .row {
@@ -124,19 +147,30 @@ header{
   article {
     margin-left: 5%;
   }
+
   span {
     font-size: 13px;
   }
 }
 
 @media all and (max-width: 992px) {
-  header{
-    display:block;
+  header {
+    display: block;
     text-align: center;
   }
-  aside{
+
+  nav {
+    margin-bottom: 1%;
+  }
+
+  #carrousel {
+    margin-left: 0;
+  }
+
+  aside {
     display: none;
   }
+
   #LineCounter {
     display: none;
   }
@@ -147,7 +181,7 @@ header{
     font-size: 18px;
   }
 
-  h1 {
+  h1, h2 {
     text-align: center;
   }
 
@@ -185,10 +219,6 @@ header{
 }
 
 @media all and (max-width: 430px) {
-  * {
-    font-size: 10px;
-  }
-
   span {
     font-size: 6px;
   }
