@@ -6,6 +6,7 @@
   --purple: rgb(197, 0, 197);
   --green: rgb(93, 179, 93);
   --background-counter: #2B2B2B;
+  --background-caption:rgba(0, 0, 0, 0.89);
 }
 
 @font-face {
@@ -52,10 +53,6 @@ h1, h2 {
 
 .orangeText {
   color: orange;
-}
-
-.whiteText {
-  color: white;
 }
 
 .yellowText {
@@ -128,10 +125,34 @@ img {
 }
 
 .imageCaption {
-  background-color: rgba(0, 0, 0, 0.89);
+  background-color: var(--background-caption);
   text-align: center;
 }
 
+#darkMode {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: var(--background-aside);
+}
+
+body.dark-theme > * {
+  filter: invert(100%);
+}
+
+body.dark-theme > main > article > section > form > div > input{
+  background-color: white;
+  filter: invert(100%);
+}
+
+body.dark-theme > aside > iframe , body.dark-theme > main > article > section > ul > li > img{
+  filter: invert(100%);
+}
 
 /* Modificaciones bootstrap */
 .row {

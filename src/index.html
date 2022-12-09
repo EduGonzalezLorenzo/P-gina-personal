@@ -71,7 +71,7 @@
     </ul>
     <iframe style="border-radius:12px"
       src="https://open.spotify.com/embed/artist/3RsMq1s4VnXCRg4CJc3Vks?utm_source=generator&theme=0" width="100%"
-      height="200" frameBorder="0" allowfullscreen=""
+      height="200" allowfullscreen=""
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </aside>
 
@@ -125,10 +125,11 @@
   <div id="LineCounter" class="col-1"></div>
 
   <main class="tab-content col-12 col-lg-9">
+    <button id="darkMode" class="btn-toggle">Modo oscuro</button>
     <article id="InfoPers" class="tab-pane fade show active">
       <h1>¿Quién soy?</h1>
       <pre> <span>
-01     <span class="orangeText">public class</span> <span class="whiteText">DescripciónPersonal {</span>
+01     <span class="orangeText">public class</span> DescripciónPersonal {
 02
 03       <span class="orangeText">public static void</span><span class="yellowText"> miVida()</span> {
 04         String descripcion =
@@ -160,7 +161,7 @@
     <article id="EstudiosCV" class="tab-pane fade">
       <h1>¿Que he estudiado?</h1>
       <pre><span>
-01     <span class="orangeText">public class</span> <span class="whiteText">Estudios {</span>
+01     <span class="orangeText">public class</span> Estudios {
 02        
 03       <span class="orangeText">public static void</span><span class="yellowText"> EstudiosPrincipales()</span> {
 04         String[] estudiosPrincipales = {
@@ -192,7 +193,7 @@
     <article id="LaboralCV" class="tab-pane fade">
       <h1>¿Donde he trabajado?</h1>
       <pre><span>
-01     <span class="orangeText">public class</span> <span class="whiteText">Empresa {</span>
+01     <span class="orangeText">public class</span> Empresa {
 02       String <span class="purpleText">periodo</span><span class="orangeText">;</span>
 03       String <span class="purpleText">puesto</span><span class="orangeText">;</span>
 04       String <span class="purpleText">descripcion</span><span class="orangeText">;</span>
@@ -289,19 +290,19 @@
         <form action="https://formsubmit.co/edugonzalezlorenzo@gmail.com" method="post">
           <div class="row">
             <label for="nombreyapellidos"> String nombre_Y_Apellidos = </label>
-            <input type="text" id="nombreyapellidos" name="nombreyapellidos">
+            <input type="text" id="nombreyapellidos" name="nombreyapellidos" required>
           </div>
           <div class="row">
             <label for="email"> String email_De_Contacto = </label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
           </div>
           <div class="row">
             <label for="phone">int telefono_De_Contacto = </label>
-            <input type="tel" id="phone" name="phone">
+            <input type="tel" id="phone" name="phone" required>
           </div>
           <div class="row">
             <label for="comentarios">String mensaje = </label>
-            <textarea id="comentarios" name="mensaje"></textarea>
+            <input type="text" id="comentarios" name="mensaje" required>
           </div>
           <div id="terminos">
             <input type="checkbox" id="condiciones" name="condiciones" required>
@@ -315,6 +316,8 @@
     </article>
 
   </main>
+
+  <script src="/src/script.js"></script>
 </body>
 
 </html>
