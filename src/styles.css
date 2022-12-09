@@ -3,8 +3,8 @@
   --background-aside: #404345;
   --background-main: #272727;
   --yellow: rgb(255, 225, 0);
-  --purple: rgb(197, 0, 197);
-  --green: rgb(93, 179, 93);
+  --purple: rgb(243, 115, 243);
+  --green: rgb(122, 230, 122);
   --background-counter: #2B2B2B;
   --background-caption:rgba(0, 0, 0, 0.89);
 }
@@ -204,6 +204,7 @@ body.dark-theme > aside > iframe , body.dark-theme > main > article > section > 
 
   h1, h2 {
     text-align: center;
+    padding-top: 10%;
   }
 
   span {
@@ -231,7 +232,7 @@ body.dark-theme > aside > iframe , body.dark-theme > main > article > section > 
 
 @media all and (max-width: 500px) {
   * {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   span {
