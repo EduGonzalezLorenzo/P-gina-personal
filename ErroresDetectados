@@ -1,0 +1,4 @@
+FALLOS ENCONTRADOS:
+- No se añade a la URL el "#" indicando en que apartado de la web se encuentra el usuario.
+- El menu "social" bloquea toda la barra de navegación al desplegar su submenu mediante tabulador.
+- En los moviles de tamaño más pequeño la letra es demasiado pequeña.

@@ -83,7 +83,9 @@ article {
 
 iframe {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 20%;
 }
 
 form, p {
@@ -236,12 +238,12 @@ body.dark-theme > aside > iframe , body.dark-theme > main > article > section > 
   }
 
   span {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
 @media all and (max-width: 430px) {
   span {
-    font-size: 6px;
+    font-size: 9px;
   }
 }
