@@ -29,7 +29,50 @@
 </head>
 
 <body class="row" data-bs-target=".navbar" data-bs-offset="50">
-  <aside class="col-2 sticky-top">
+
+  <div class="menu col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+    <a id="menu-title" class="col-12 nav-link text-decoration-none text-white" data-bs-toggle="collapse" role="button"
+      data-bs-target="#menu-list">
+      Proyecto <span class="d-md-none d-lg-none d-xl-none dropdown-toggle">
+    </a>
+    <nav class="collapse show" id="menu-list">
+      <ul class="nav row nav-pills" role="tablist">
+        <li class="nav-item">
+          <a href="#InfoPers" class="col-12 nav-link active text-decoration-none text-white">Información personal</a>
+        </li>
+        <li class="nav-item">
+          <a href="#EstudiosCV" class="col-12 nav-link text-decoration-none text-white">Estudios</a>
+        </li>
+        <li class="nav-item">
+          <a href="#LaboralCV" class="col-12 nav-link text-decoration-none text-white">Experiencia laboral</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Portfolio" class="col-12 nav-link text-decoration-none text-white">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Contacto" class="col-12 nav-link text-decoration-none text-white">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="col-12 m-0 nav-link text-decoration-none text-white" data-bs-toggle="collapse" role="button"
+            data-bs-target="#socialMobile">
+            Social <span class="dropdown-toggle"></span>
+          </a>
+          <nav class="collapse" id="socialMobile">
+            <a class="btn bg-primary" target="_blank"
+              href="https://www.linkedin.com/in/edu-gonzález-lorenzo-626698217/"><i class="fa fa-linkedin"></i></a>
+            <a class="btn bg-warning" target="_blank" href="https://github.com/ElTambores"><i
+                class="fa fa-github"></i></a>
+            <a class="btn bg-success" target="_blank" href="https://wa.me/34697443132" role="button"><i
+                class="fa fa-whatsapp"></i></a>
+            <a class="btn bg-danger" target="_blank" href="mailto:edugonzalezlorenzo@gmail.com" role="button"><i
+                class="fa fa-google"></i></a>
+          </nav>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- <aside class="col-2 sticky-top">
     <p class="fs-3 text-white text-center">Proyecto</p>
     <ul class="nav row nav-pills" role="tablist">
       <li class="nav-item">
@@ -72,7 +115,7 @@
     
   </aside>
 
-  <header class="col-12 sticky-top">
+  <header class="col-12 sticky-top" id="header">
     <a class="fs-3 mb-2 col-12 nav-link text-decoration-none text-white" data-bs-toggle="collapse" role="button"
       data-bs-target="#mobileNav">
       Proyecto <span class="dropdown-toggle">
@@ -117,16 +160,16 @@
         </li>
       </ul>
     </nav>
-  </header>
-
+  </header> -->
+<!-- 
   <iframe style="border-radius:12px"
       src="https://open.spotify.com/embed/artist/3RsMq1s4VnXCRg4CJc3Vks?utm_source=generator&theme=0" width="20%"
       height="200" allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
 
-  <div id="LineCounter" class="col-1"></div>
+  <!-- <div id="LineCounter" class="col-1"></div> -->
 
-  <main class="tab-content col-12 col-lg-9">
+  <main class="tab-content  col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
     <button id="darkMode" class="btn-toggle">Modo oscuro</button>
     <article id="InfoPers" class="tab-pane fade show active">
       <h1>¿Quién soy?</h1>
@@ -173,18 +216,20 @@
 02        
 03       <span class="orangeText">public static void</span><span class="yellowText"> EstudiosPrincipales()</span> {
 04         String[] estudiosPrincipales = {
-05           <span class="greenText">"ESO en Juan de la Cierva."</span><span class="orangeText">,</span>
-06           <span class="greenText">"Bachiller Tencológico en Sant Josep Obrero."</span><span class="orangeText">,</span>
-07           <span class="greenText">"CFGS en Mantenimiento Electrónico en Ies Politécnic."</span><span class="orangeText">,</span>
-08           <span class="greenText">"CFGS en Desarrollo de Aplicaciones Web en Es Liceu."</span>
+05           <span class="greenText">"ESO - Juan de la Cierva."</span><span class="orangeText">,</span>
+06           <span class="greenText">"Bachiller Tencológico - Sant Josep Obrero."</span><span class="orangeText">,</span>
+07           <span class="greenText">"CFGS Mantenimiento Electrónico -</span>
+08           <span class="greenText">IES Politécnic."</span><span class="orangeText">,</span>
+09           <span class="greenText">"CFGS en Desarrollo de Aplicaciones Web - </span>
+10           <span class="greenText">Es Liceu."</span>
 09         }<span class="orangeText">;</span>
 10       }
 11       
 12       <span class="orangeText">public static void</span><span class="yellowText"> EstudiosComplementariosYAptitudes()</span> {
 13         String[] estudiosComplementarios = {
-14           <span class="greenText">"Nivel 7 de ingles oral por el Trinity College."</span><span class="orangeText">,</span>
-15           <span class="greenText">"Curso de reparación de cafeteras por la empresa Expobar"</span><span class="orangeText">,</span>
-16           <span class="greenText">"Curso de reparación de bombas de infusión por la empresa BD."</span><span class="orangeText">,</span>
+14           <span class="greenText">"Nivel 7 Inglés oral por el Trinity College."</span><span class="orangeText">,</span>
+15           <span class="greenText">"Curso de reparación de cafeteras Expobar"</span><span class="orangeText">,</span>
+16           <span class="greenText">"Curso de reparación de bombas de infusión BD."</span><span class="orangeText">,</span>
 17           <span class="greenText">"Castellano y catalán nativo."</span><span class="orangeText">,</span>
 18           <span class="greenText">"Carnet de coche tipo B. Coche y moto propias."</span>
 19         }<span class="orangeText">;</span>

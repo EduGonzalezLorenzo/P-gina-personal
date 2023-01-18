@@ -3,11 +3,26 @@ const btn = document.querySelector('.btn-toggle');
 // Se comprueba que exista.
 if (btn) {
     btn.addEventListener('click', function () {
+        const modeLabel = document.getElementById("darkMode");
         // Si existe se pone en modo noche si no estaba activado. Si lo estaba se vuelve al modo por defecto.
         if(document.body.classList.toggle('dark-theme')){
-            document.getElementById("darkMode").innerHTML = "Modo luminoso";
+            modeLabel.innerHTML = "Modo luminoso";
         } else {
-            document.getElementById("darkMode").innerHTML = "Modo oscuro";
+            modeLabel.innerHTML = "Modo oscuro";
         }
     })
+}
+
+onresize = (evt) => {
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    const menu = document.getElementById('menu-list');
+    const menuTitle = document.getElementById('menu-title');
+    menuTitle.on('hide.bs.collapse', () => {
+        alert('pitooo')
+      })
+    if (vw <  768) {
+        menu.classList.remove('show');
+    } else {
+        menu.classList.add('show');
+    }
 }

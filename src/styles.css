@@ -19,6 +19,12 @@
   src: url(fonts/JetBrainsMono-Italic[wght].ttf);
 }
 
+
+.header {
+
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +38,7 @@ body {
   min-height: 100vh;
 }
 
-aside, header {
+aside, header, .menu {
   background-color: var(--background-aside);
   padding-top: 1%;
 }
@@ -162,7 +168,7 @@ body.dark-theme > aside > iframe , body.dark-theme > main > article > section > 
 }
 
 /* Media queries*/
-@media all and (max-width: 1024px) {
+/* @media all and (max-width: 1024px) {
   iframe {
     display: none;
   }
@@ -197,7 +203,7 @@ body.dark-theme > aside > iframe , body.dark-theme > main > article > section > 
   #LineCounter {
     display: none;
   }
-}
+} */
 
 @media all and (max-width: 850px) {
   * {
