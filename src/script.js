@@ -17,9 +17,6 @@ onresize = (evt) => {
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
     const menu = document.getElementById('menu-list');
     const menuTitle = document.getElementById('menu-title');
-    menuTitle.on('hide.bs.collapse', () => {
-        alert('pitooo')
-      })
     if (vw <  768) {
         menu.classList.remove('show');
     } else {
