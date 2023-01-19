@@ -38,6 +38,10 @@ aside {
   padding-top: 1%;
 }
 
+#menu-title{
+  font-size: 30px;
+}
+
 main {
   background-color: var(--background-main);
   min-height: 90vh;
@@ -53,7 +57,7 @@ h1, h2 {
 }
 
 .orangeText {
-  color: orange;
+  color: orange !important;
 }
 
 .yellowText {
@@ -61,16 +65,11 @@ h1, h2 {
 }
 
 .purpleText {
-  color: var(--purple);
+  color: var(--purple) !important;
 }
 
 .greenText {
-  color: var(--green);
-}
-
-.functionContent {
-  margin-left: 10%;
-  margin-right: 10%;
+  color: var(--green) !important;
 }
 
 #LineCounter {
@@ -114,7 +113,6 @@ header {
 #portfolioTitulo {
   margin: 0;
   text-align: center;
-
 }
 
 img {
