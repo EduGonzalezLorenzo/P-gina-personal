@@ -6,7 +6,7 @@
   --purple: rgb(243, 115, 243);
   --green: rgb(122, 230, 122);
   --background-counter: #2B2B2B;
-  --background-caption:rgba(0, 0, 0, 0.89);
+  --background-caption: rgba(0, 0, 0, 0.89);
 }
 
 @font-face {
@@ -38,8 +38,13 @@ aside {
   padding-top: 1%;
 }
 
-#menu-title{
+#menu-title {
   font-size: 30px;
+  padding: 5%;
+}
+
+#flecha {
+  font-size: 20px;
 }
 
 main {
@@ -99,9 +104,10 @@ nav {
   margin-bottom: 5%;
 }
 
-a{
+a {
   color: white !important;
 }
+
 nav>a {
   margin: 2%;
 }
@@ -132,8 +138,8 @@ img {
 }
 
 #darkMode {
-  position: fixed;
-  bottom: 1%;
+  position:fixed;
+  top: 1%;
   right: 1%;
   padding: 10px;
   border-radius: 8px;
@@ -143,16 +149,16 @@ img {
   background-color: var(--background-aside);
 }
 
-body.dark-theme > * {
+body.dark-theme>* {
   filter: invert(100%);
 }
 
-body.dark-theme > main > article > section > form > div > input{
+body.dark-theme>main>article>section>form>div>input {
   background-color: white;
   filter: invert(100%);
 }
 
-body.dark-theme > aside > iframe , body.dark-theme > main > article > section > ul > li > img{
+body.dark-theme>aside>nav>iframe, body.dark-theme>main>article>section>ul>li>img {
   filter: invert(100%);
 }
 
@@ -163,46 +169,38 @@ body.dark-theme > aside > iframe , body.dark-theme > main > article > section > 
 
 /* Media queries*/
 
-@media all and (max-width: 850px) {
+@media all and (max-width: 992px) {
   * {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   h1, h2 {
     text-align: center;
     padding-top: 10%;
   }
-
-  span {
-    font-size: 12px;
+  #menu-title {
+    font-size: 24px;
   }
-
+ 
   article {
     margin-left: 1%;
   }
 }
 
-@media all and (max-width: 620px) {
+@media all and (max-width: 768px) {
   * {
     font-size: 15px;
   }
 
-  span {
-    font-size: 9px;
-  }
-
-  article {
-    margin: 1%;
+  #menu-title {
+    font-size: 30px;
   }
 }
 
-@media all and (max-width: 500px) {
-  * {
-    font-size: 15px;
-  }
+@media all and (max-width: 576px) {
 
   span {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -210,4 +208,5 @@ body.dark-theme > aside > iframe , body.dark-theme > main > article > section > 
   span {
     font-size: 9px;
   }
+
 }
