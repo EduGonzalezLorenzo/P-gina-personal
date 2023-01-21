@@ -61,8 +61,13 @@ h1, h2 {
   margin-left: 10%;
 }
 
+div > h1{
+margin-left: 0; 
+}
+
 .orangeText {
   color: orange !important;
+  display: hidden;
 }
 
 .yellowText {
@@ -178,6 +183,7 @@ body.dark-theme>aside>nav>iframe, body.dark-theme>main>article>section>ul>li>img
     text-align: center;
     padding-top: 10%;
   }
+
   #menu-title {
     font-size: 24px;
   }
