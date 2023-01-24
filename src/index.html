@@ -53,15 +53,15 @@
           <a data-bs-toggle="tab" href="#Contacto" class="col-12 nav-link" data-toggle="tab">Contacto</a>
         </li>
       </ul>
-      <nav>
-        <a class="btn bg-primary" target="_blank" href="https://www.linkedin.com/in/edu-gonzález-lorenzo-626698217/"
-          data-toggle="tab" aria-label="Mi perfil de Linkedin"><i class="fa fa-linkedin"></i></a>
-        <a class="btn bg-warning" target="_blank" href="https://github.com/ElTambores" data-toggle="tab"
+      <nav id="social">
+        <a class="bg-primary" target="_blank" href="https://www.linkedin.com/in/edu-gonzález-lorenzo-626698217/"
+          tabindex="0" aria-label="Mi perfil de Linkedin"><i class="fa fa-linkedin"></i></a>
+        <a class="bg-warning" target="_blank" href="https://github.com/ElTambores" data-toggle="tab" tabindex="0"
           aria-label="Mi perfil de Github"><i class="fa fa-github"></i></a>
-        <a class="btn bg-success" target="_blank" href="https://wa.me/34697443132" role="button" data-toggle="tab"
+        <a class="bg-success" target="_blank" href="https://wa.me/34697443132" data-toggle="tab" tabindex="0"
           aria-label="Mi contacto vía Whatsapp"><i class="fa fa-whatsapp"></i></a>
-        <a class="btn bg-danger" target="_blank" href="mailto:edugonzalezlorenzo@gmail.com" role="button"
-          data-toggle="tab" aria-label="Mi contacto vía email"><i class="fa fa-google"></i></a>
+        <a class="bg-danger" target="_blank" href="mailto:edugonzalezlorenzo@gmail.com" tabindex="0" data-toggle="tab"
+          aria-label="Mi contacto vía email"><i class="fa fa-google"></i></a>
       </nav>
       <iframe style="border-radius:12px" title="Reproductor de Spotify de mi disco"
         src="https://open.spotify.com/embed/artist/3RsMq1s4VnXCRg4CJc3Vks?utm_source=generator&theme=0" width="100%"
@@ -74,10 +74,9 @@
   <div id="LineCounter" class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
 
   <main class="tab-content col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-    <button id="darkMode" class="btn-toggle">Modo oscuro</button>
     <article id="InfoPers" class="tab-pane fade active show">
       <h1>¿Quién soy?</h1>
-      <pre> <span>
+      <pre tabindex="0"> <span>
 <span aria-hidden="true">01</span>     <span class="orangeText" aria-hidden="true">public class</span> DescripciónPersonal <span aria-hidden="true">{</span>
 <span aria-hidden="true">02</span>
 <span aria-hidden="true">03</span>       <span class="orangeText" aria-hidden="true">public static void</span><span class="yellowText"> miVida()</span> <span aria-hidden="true">{</span>
@@ -115,7 +114,7 @@
 
     <article id="EstudiosCV" class="tab-pane fade">
       <h1>¿Que he estudiado?</h1>
-      <pre><span>
+      <pre tabindex="0"><span>
 <span aria-hidden="true">01</span>     <span class="orangeText" aria-hidden="true">public class</span> Estudios <span aria-hidden="true">{</span>
 <span aria-hidden="true">02</span>        
 <span aria-hidden="true">03</span>       <span class="orangeText" aria-hidden="true">public static void</span><span class="yellowText"> EstudiosPrincipales()</span> <span aria-hidden="true">{</span>
@@ -151,7 +150,7 @@
 
     <article id="LaboralCV" class="tab-pane fade">
       <h1>¿Donde he trabajado?</h1>
-      <pre><span>
+      <pre tabindex="0"><span>
 <span aria-hidden="true">01     <span class="orangeText">public class</span> Empresa {
 02       String <span class="purpleText">periodo</span><span class="orangeText">;</span>
 03       String <span class="purpleText">puesto</span><span class="orangeText">;</span>
@@ -199,8 +198,7 @@
         <div class="carousel-indicators">
           <button aria-label="Ir a MazeGame" type="button" data-bs-target="#carrousel" data-bs-slide-to="0"
             class="active"></button>
-          <button aria-label="Ir a buscaminas" type="button" data-bs-target="#carrousel"
-            data-bs-slide-to="1"></button>
+          <button aria-label="Ir a buscaminas" type="button" data-bs-target="#carrousel" data-bs-slide-to="1"></button>
           <button aria-label="Ir a RestaurantWeb" type="button" data-bs-target="#carrousel"
             data-bs-slide-to="2"></button>
         </div>
@@ -246,7 +244,7 @@
 
     </article>
 
-    <article id="Contacto" class="tab-pane fade">
+    <article id="Contacto" class="tab-pane fade" tabindex="0">
       <h1>¿Como hablar conmigo?</h1>
       <section>
         <p> Puedes contactar conmigo por <a class="greenText" href="https://wa.me/34697443132"
@@ -292,7 +290,7 @@
         </form>
       </section>
     </article>
-
+    <button id="darkMode" class="btn-toggle">Modo oscuro</button>
   </main>
 
   <script src="/src/script.js"></script>

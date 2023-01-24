@@ -1,3 +1,0 @@
-FALLOS SOLUCIONADOS:
-- Se ha aumentado el tamaño de letra para ventanas pequeñas. Para evitar perder información se ha reducido la longitud de linea.
-- Se han unificado los dos navs en uno solo para evitar los problemas de tener un navbar para el modo movil y otro para el modo desktop

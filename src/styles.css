@@ -114,7 +114,14 @@ a {
 }
 
 nav>a {
-  margin: 2%;
+  margin: 5%;
+  padding: 2%;
+  border-radius: 100%;
+}
+
+#social{
+  margin-top: 10%;
+  text-align: center;
 }
 
 header {

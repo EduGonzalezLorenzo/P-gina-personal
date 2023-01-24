@@ -1,0 +1,44 @@
+FALLOS ENCONTRADOS MANUALMENTE:
+- No se añade a la URL el "#" indicando en que apartado de la web se encuentra el usuario
+-> No corregido: No se añade el href del apartado en el que estás debido a la propia filosofía de funcionamiento de Bootstrap.
+
+- El menu "social" bloquea toda la barra de navegación al desplegar su submenu mediante navegación con teclado.
+-> Corregido: se ha eliminado el submenu social, ahora los iconos están visibles todo el rato.
+
+- En los moviles de tamaño más pequeño la letra es demasiado pequeña.
+-> Corregido: Se ha aumentado el tamaño de letra para ventanas pequeñas. Para evitar perder información se ha reducido la longitud de linea.
+
+- El navbar al estar duplicado genera problemas para definir que tab esta seleccionada.
+-> Corregido: Se han unificado los dos navs en uno solo para evitar los problemas de tener un navbar para el modo movil y otro para el modo desktop
+
+
+FALLOS A REVISAR MANUALMENTE SEGÚN LIGHTHOUSE:
+- La página tiene un orden logico de tabulación
+-> Revisado y arreglado.
+
+- Los controles interactivos se marcan al navegar con el teclado
+-> Revisado y arreglado.
+
+- Los elementos interactios indican su proposito y estado
+-> Funciona correctamente.
+
+- El usuario es centrado directamente en el nuevo contenido.
+-> Funciona correctamente.
+
+- El usuario no se puede quedar encerrado en un menú.
+-> Revisado y arreglado.
+
+- Los controles personalizados tienen etiquetas asociadas.
+-> No requiere revisión.
+
+- Controles personalizados tienen roles ARIA.
+-> No requiere revisión.
+
+- El orden visual de la página sigue el orden DOM
+-> Funciona correctamente.
+
+- El contenido "offscreen" no es visible para las tecnologias asistidas.
+-> No requiere revisión.
+
+- Las etiquetas de html5 se usan para mejorar la navegación.
+-> Funciona correctamente.
