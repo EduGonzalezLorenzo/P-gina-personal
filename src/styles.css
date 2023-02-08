@@ -12,11 +12,7 @@
 @font-face {
   font-family: intelliJFont;
   src: url(fonts/JetBrainsMono[wght].ttf);
-}
-
-@font-face {
-  font-family: intelliJFontItalic;
-  src: url(fonts/JetBrainsMono-Italic[wght].ttf);
+  font-display: swap;
 }
 
 
@@ -61,8 +57,8 @@ h1, h2 {
   margin-left: 10%;
 }
 
-div > h1{
-margin-left: 0; 
+div>h1 {
+  margin-left: 0;
 }
 
 .orangeText {
@@ -113,13 +109,7 @@ a {
   color: white !important;
 }
 
-nav>a {
-  margin: 5%;
-  padding: 2%;
-  border-radius: 100%;
-}
-
-#social{
+#social {
   margin-top: 10%;
   text-align: center;
 }
@@ -134,6 +124,7 @@ header {
 }
 
 img {
+  height: 75%;
   width: 75%;
   margin: 0 auto;
 }
@@ -150,7 +141,7 @@ img {
 }
 
 #darkMode {
-  position:fixed;
+  position: fixed;
   top: 1%;
   right: 1%;
   padding: 10px;
@@ -170,7 +161,7 @@ body.dark-theme>main>article>section>form>div>input {
   filter: invert(100%);
 }
 
-body.dark-theme>aside>nav>iframe, body.dark-theme>main>article>section>ul>li>img {
+body.dark-theme>aside>nav>nav>a>img, body.dark-theme>aside>nav>iframe, body.dark-theme>main>article>section>ul>li>img {
   filter: invert(100%);
 }
 
@@ -194,7 +185,7 @@ body.dark-theme>aside>nav>iframe, body.dark-theme>main>article>section>ul>li>img
   #menu-title {
     font-size: 24px;
   }
- 
+
   article {
     margin-left: 1%;
   }
@@ -207,6 +198,10 @@ body.dark-theme>aside>nav>iframe, body.dark-theme>main>article>section>ul>li>img
 
   #menu-title {
     font-size: 30px;
+  }
+
+  .icono {
+    width: 50%;
   }
 }
 
