@@ -1,0 +1,1 @@
+- R01: Debido a que el funcionamiento de la página depende de bootstrap este no puede cargarse en segundo plano.
